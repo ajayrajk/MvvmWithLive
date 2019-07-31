@@ -9,3 +9,6 @@
 
                 <TextView
                     android:text="@{viewmodel.userName}" />
+
+
+*This can also improve your app's performance and help prevent memory leaks and null pointer exceptions.
