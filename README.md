@@ -13,3 +13,20 @@
 
 * This can also improve your app's performance and help prevent memory leaks and null pointer exceptions.
 
+
+
+
+
+
+
+
+Put And Get Data one activity to another activity
+
+get Data
+     testData= new Gson().fromJson(bundle.getString("testData"), TestData.class);
+
+
+
+put data
+      intent.putExtra("testData" ,new Gson().toJson(testData, TestData.class));
+
