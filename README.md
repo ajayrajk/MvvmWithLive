@@ -34,8 +34,10 @@ put data
 # P1:- 
 Supose we have list of user details with bitmap image url so we cant use onSavedInstanceState and restore data with the save bcz of this is large amount of data. It is use only in case of small amount data that can serialized and deserialized.
 
-A ViewModel must never hold a referance of a view.
+#A ViewModel must never hold a referance of a view.
 This design also means you can write tests to cover a ViewModel more easily as it doesn't know about view and Lifecycle objects.
 
-
-
+# The lifecycle of a ViewModel:
+1. Scope of activity is till its not finish and in Fragment till detached Fragment.
+2. We can use ViewModelProvider when getting the ViewModel Object instance.
+3. 
