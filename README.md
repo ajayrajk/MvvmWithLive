@@ -30,3 +30,10 @@ get Data
 put data
       intent.putExtra("testData" ,new Gson().toJson(testData, TestData.class));
 
+# MVVM Why we use:
+# P1:- 
+Supose we have list of user details with bitmap image url so we cant use onSavedInstanceState and restore data with the save bcz of this is large amount of data. It is use only in case of small amount data that can serialized and deserialized.
+# P2: -
+
+
+
